@@ -1,0 +1,51 @@
+.stock {
+  padding-top: 32px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 72px;
+  }
+
+  &__header {
+    margin-bottom: 44px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    line-height: 1;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
+  }
+
+  &__requirement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    color: #141921;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+      margin-right: 36px;
+      text-align: right;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+      min-width: 240px;
+    }
+  }
+}

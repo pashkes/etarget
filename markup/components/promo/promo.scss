@@ -1,0 +1,105 @@
+.promo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #12171E url(__static__general/bg_dark.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 50px;
+    padding-bottom: 42px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__cost {
+    display: inline-flex;
+    margin-bottom: 20px;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-align: inherit;
+    span {
+      position: relative;
+      padding: 0 8px;
+      &:first-child {
+        &::after {
+          content: '';
+          position: absolute;
+          right: -2px;
+          top: 5px;
+          font-size: 24px;
+          width: 5px;
+          height: 5px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__title {
+    max-width: 1055px;
+    margin-bottom: 30px;
+    text-shadow: 0 28px 92px #000000;
+    font-weight: 800;
+    line-height: .9;
+    letter-spacing: -0.53px;
+    font-size: 45px;
+    text-align: inherit;
+    @include media-breakpoint-up(xl) {
+      font-size: 90px;
+    }
+  }
+  &__subtitle {
+    max-width: 510px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.44;
+    text-align: inherit;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-bottom: 42px;
+    @include media-breakpoint-up(sm) {
+      min-width: 240px;
+      width: auto;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 85px;
+    }
+  }
+  &__about-company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 107px;
+    margin-right: 22px;
+    height: 64px;
+  }
+  &__desc {
+    max-width: 195px;
+  }
+  &__socials {
+    @include media-breakpoint-up(md) {
+      padding-top: 24px;
+    }
+  }
+}

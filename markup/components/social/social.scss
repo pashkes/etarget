@@ -1,0 +1,35 @@
+.social {
+  display: inline-flex;
+  padding: 0;
+  list-style-type: none;
+  &__item {
+    margin-right: 16px;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: $transition-base;
+    border: 1px solid #ffffff;
+    &:hover {
+      border-color: lighten($primary, 3%);
+      background-color: lighten($primary, 3%);
+    }
+    &:focus {
+      border-color: darken($primary, 3%);
+      background-color: darken($primary, 3%);
+    }
+    .icon {
+      fill: white;
+      transition: $transition-base;
+    }
+  }
+}

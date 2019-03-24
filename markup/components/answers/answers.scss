@@ -1,0 +1,84 @@
+.answers {
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 72px;
+    padding-bottom: 50px;
+  }
+  div.slick-slide.slick-active .slider__item {
+    box-shadow: none;
+    transition: $transition-base;
+
+    &:hover {
+      box-shadow: 0 17px 20px rgba(20, 25, 33, 0.3) !important;
+    }
+  }
+  .slick-slide{
+    @include media-breakpoint-up(lg) {
+      width: 352px !important;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 34px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &__item {
+    padding: 24px;
+    flex-grow: 1;
+    border: 1px solid #dddddd;
+    box-shadow: none;
+
+    @include media-breakpoint-up(lg) {
+      padding: 32px 48px 42px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #141921;
+    }
+    a {
+      color: #2361ff;
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        color: lighten(#2361ff, 5%);
+      }
+    }
+  }
+
+  &__question {
+    display: block;
+    color: #141921;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .slick-track {
+    display: flex;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+
+  .slick-slide {
+    height: auto;
+    align-self: stretch;
+  }
+  .slider .slick-slide .slider__item {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}

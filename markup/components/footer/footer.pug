@@ -1,0 +1,30 @@
+mixin footer(data)
+  include ../social/social
+
+  footer.footer
+    .container
+      .footer__main
+        .row.align-items-lg-start.justify-content-center.justify-content-sm-between.justify-content-lg-start.align-items-lg-center
+          .col-auto.col-md-8.col-lg.col-xl-6
+            .footer__about-company
+              a(href="#" target="_blank").footer__logo-promouter
+                img(src="__static__img/general/logo-ahmanov.png" alt="Лооготип Ашманов и Партнеры»")
+              p.footer__desc.
+                Мы&nbsp;увеличиваем прибыль и&nbsp;решаем бизнес-задачи.
+                <br>
+                Нам доверили продвижение своих сайтов более 1100&nbsp;клиентов.
+                <a href="#" target="_blank">Реклама на&nbsp;YouTube</a>
+
+          .col-auto.ml-xl-auto
+            .footer__social
+              +social(social)
+          .col-12.col-sm-auto.ml-md-auto.mr-md-auto.mr-xl-0.ml-xl-0
+            a(href="#").footer__button.button Стать участником
+      .footer__info
+        .row.justify-content-sm-between.align-items-sm-center
+          .col-sm-auto
+            .footer__logo
+              img(src="__static__img/general/logo-white.svg" width=184 height=40 alt="Логотип etarget")
+          .col-sm-auto
+            p.footer__copyright.
+              &copy;2001&nbsp;&mdash; 2019 &laquo;Ашманов и&nbsp;партнеры&raquo;

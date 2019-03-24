@@ -1,0 +1,57 @@
+mixin stock(data)
+  section.stock
+    .container
+      .stock__header
+        .row.align-items-end
+          .col-xl
+            h2.stock__title.h2 Участие бесплатное
+          .col-xl-auto
+            .stock__col
+              .stock__requirement
+                span Нужно только зарегистрироваться.
+                span Количество мест ограничено
+              a(href="#").stock__button.button Хочу участвовать!
+    .slider
+      .slider__wrapper.container
+        .slider__list.js-slider
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-1.jpg" width="1200" height="801" alt="фото-1")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-2.jpg" width="1200" height="801" alt="фото-2")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-3.jpg" width="1200" height="801" alt="фото-3")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-4.jpg" width="1200" height="801" alt="фото-4")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-5.jpg" width="1200" height="801" alt="фото-5")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-6.jpg" width="1200" height="801" alt="фото-6")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-7.jpg" width="1200" height="801" alt="фото-7")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-8.jpg" width="1200" height="801" alt="фото-8")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-9.jpg" width="1200" height="801" alt="фото-9")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-10.jpg" width="1200" height="801" alt="фото-10")
+          div
+            .slider__item.wide
+              img(data-lazy="__static__img/content/photo-conf-11.jpg" width="1200" height="801" alt="фото-11")
+      .container
+        .row.align-items-center
+          .col
+            .slider__dots.js-dots
+          .col-auto
+            .slider__arrows
+              button(type="button" aria-label="предыдущий слайдре").slider__arrow.prev.js-prev-slide
+              button(type="button" aria-label="следующий слайдер").slider__arrow.next.js-next-slide

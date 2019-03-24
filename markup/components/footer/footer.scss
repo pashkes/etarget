@@ -1,0 +1,109 @@
+.footer {
+  padding-top: 32px;
+  background: #12161D url(__static__general/footer-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 62px;
+  }
+
+  &__main {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(#fff, .2);
+
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 52px;
+    }
+  }
+
+  &__about-company {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__logo-promouter {
+    margin-right: 22px;
+    margin-bottom: 16px;
+    width: 107px;
+    height: 64px;
+    flex: none;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    max-width: 270px;
+    color: rgba(#fff, .8);
+    font-size: 14px;
+    line-height: 1.7;
+    @include media-breakpoint-up(md) {
+      max-width: 400px;
+      margin-bottom: 0;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+      color: inherit;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(#fff, .4);
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__social {
+    @include media-breakpoint-up(lg) {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    .social {
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 0;
+        }
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      min-width: 240px;
+      width: auto;
+    }
+  }
+
+  &__info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  &__logo {
+    width: 144px;
+    height: 32px;
+    opacity: .4;
+  }
+  &__copyright {
+    color: rgba(#fff, .3);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}

@@ -1,0 +1,48 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: $primary;
+  border-color: $primary;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.07px;
+  border-radius: 20px;
+  vertical-align: top;
+  text-decoration: none;
+  transition: $transition-base;
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($primary, 3%);
+    color: white;
+  }
+  &:focus {
+    background-color: darken($primary, 3%);
+
+  }
+}
+
+.h2,
+h2 {
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  @media(min-width: map-get($grid-breakpoints, lg)) {
+    font-size: 48px;
+  }
+}
+
+h3,
+.h3 {
+  color: #141921;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  @include media-breakpoint-up(lg) {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,27 @@
+mixin promo(data)
+  include ../header/header
+
+  .promo
+    .container
+      +header()
+      .promo__body
+        .promo__cost
+          span ежемесячно
+          span бесплатно
+        h1.promo__title.h1 Тематические конференции для бизнеса
+        p.promo__subtitle.
+          Регулярные конференции про маркетинг и&nbsp;новые инструменты
+          в&nbsp;применении к&nbsp;вашей отрасли.
+        a(href="#").promo__button.button.button--primary Узнать подробнее
+      .row.justify-content-center.justify-content-md-between
+        .col-auto
+          .promo__about-company
+            a(href="https://ashmanov.com" target="_blank").promo__logo
+              img(src="__static__img/general/logo-ahmanov.png" alt="Лооготип Ашманов и Партнеры»")
+            span.promo__desc.
+              Организатор конференций
+              «Ашманов и партнеры»
+        .col-auto
+          .promo__socials
+            +social(social)
+

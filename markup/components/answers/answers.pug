@@ -1,0 +1,42 @@
+mixin answers(data)
+  section.answers
+    .container
+      h2.answers__title.h2 Ответы на&nbsp;частозадаваемые вопросы
+    .slider
+      .slider__wrapper.container
+        .slider__list.js-slider-answer
+          div
+            .slider__item.answers__item
+              span.answers__question &mdash;&nbsp;Как долго?
+              p.
+                &laquo;Мы&nbsp;проводим конференции почти каждый месяц. В&nbsp;прошлом году мы&nbsp;собирались в&nbsp;офисах Mail.ru Group
+                и&nbsp;Google.&raquo;
+          div
+            .slider__item.answers__item
+              span.answers__question &mdash;&nbsp;Где посмотреть расписание?
+              p.
+                &laquo;Обычно мы&nbsp;собираемся в&nbsp;10:00,
+                с&nbsp;10:30 начинаются выступления. Заканчиваем примерно в&nbsp;17:00.
+                Но&nbsp;время может сдвигаться, смотрите программу конкретной конференции.&raquo;
+          div
+            .slider__item.answers__item
+              span.answers__question &mdash;&nbsp;Где посмотреть расписание?
+              p.
+                &laquo;Мы&nbsp;делаем анонсы и&nbsp;публикуем расписание конференций на&nbsp;сайте
+                <a href="https://ashmanov.com" target="_blank">ashmanov.com</a>. Чтобы зарегистрироваться, зайдите
+                на&nbsp;страницу нужной конференции
+                и&nbsp;оставьте заявку. &raquo;
+          div
+            .slider__item.answers__item
+              span.answers__question &mdash;&nbsp;Как долго?
+              p.
+                &laquo;Мы&nbsp;проводим конференции почти каждый месяц. В&nbsp;прошлом году мы&nbsp;собирались в&nbsp;офисах Mail.ru Group
+                и&nbsp;Google.&raquo;
+      .container
+        .row.align-items-center
+          .col
+            .slider__dots.js-answer-dots
+          .col-auto
+            .slider__arrows
+              button(type="button" aria-label="предыдущий слайдре").slider__arrow.prev.js-answer-prev-slide
+              button(type="button" aria-label="следующий слайдер").slider__arrow.next.js-answer-next-slide

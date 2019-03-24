@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 24">
+  <defs>
+    <clipPath id="a" transform="translate(5 5)">
+      <path d="M14.6,6,10.3,1.7a1,1,0,0,1,0-1.4,1,1,0,0,1,1.4,0l6,6a1,1,0,0,1,0,1.4l-6,6a1,1,0,0,1-1.4-1.4L14.6,8H1A.94.94,0,0,1,0,7,.94.94,0,0,1,1,6Z" fill="#fff"/>
+    </clipPath>
+    <clipPath id="b" transform="translate(5 5)">
+      <rect x="-5" y="-5" width="28" height="24" fill="#fff"/>
+    </clipPath>
+    <clipPath id="c" transform="translate(5 5)">
+      <rect width="18" height="14" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <title>arrow-right-white</title>
+  <g>
+    <path d="M14.6,6,10.3,1.7a1,1,0,0,1,0-1.4,1,1,0,0,1,1.4,0l6,6a1,1,0,0,1,0,1.4l-6,6a1,1,0,0,1-1.4-1.4L14.6,8H1A.94.94,0,0,1,0,7,.94.94,0,0,1,1,6Z" transform="translate(5 5)" fill="#fff"/>
+    <g clip-path="url(#a)">
+      <g>
+        <rect width="28" height="24" fill="#fff"/>
+        <g clip-path="url(#b)">
+          <g>
+            <rect x="5" y="5" width="18" height="14" fill="#fff"/>
+            <g clip-path="url(#c)">
+              <path d="M-5-5H23V19H-5Z" transform="translate(5 5)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+.who-like {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  @include media-breakpoint-up(lg) {
+    padding-top: 72px;
+    padding-bottom: 75px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 50px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    margin-bottom: 50px;
+    min-height: 98px;
+  }
+  &__desc {
+    text-align: center;
+    max-width: 250px;
+    color: #141921;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+  }
+}

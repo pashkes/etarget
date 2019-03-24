@@ -1,0 +1,21 @@
+// Common styles of the project
+
+html, body {
+  height: 100%;
+  font-family: Circe, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #141921;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+/*.container {
+  padding-right: 16px;
+  padding-left: 16px;
+}*/

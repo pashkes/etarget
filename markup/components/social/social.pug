@@ -1,0 +1,8 @@
+mixin social(data)
+  include ../icon/icon
+
+  ul.social&attributes(attributes)
+    each item in data
+      li.social__item
+        a(href="#" target="_blank" title=item.name).social__link
+          +icon(item.iconName, item.iconWidth, item.iconHeight)
