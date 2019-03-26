@@ -15,6 +15,10 @@
 
   &__title {
     line-height: 1;
+    margin-bottom: 18px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
   }
 
   &__col {

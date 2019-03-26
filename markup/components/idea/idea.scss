@@ -5,11 +5,11 @@
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     line-height: 1;
 
     @media(min-width: map-get($grid-breakpoints, lg)) {
-      margin-bottom: 32px;
+      margin-bottom: 22px;
       line-height: 1.5;
     }
   }
@@ -21,9 +21,13 @@
     }
   }
   &__text {
+    max-width: 634px;
     font-size: 18px;
     line-height: 1.55;
-
+    color: rgba(20,25,33,.6);
+    @include media-breakpoint-up(lg) {
+      padding-top: 6px;
+    }
     p {
       margin-bottom: 32px;
 
@@ -36,15 +40,14 @@
   }
 
   &__strong {
-    max-width: 392px;
     margin-bottom: 0;
     color: #171d25;
     font-weight: 800;
     font-size: 22px;
     line-height: 1.3;
-    letter-spacing: -0.9px;
 
     @media(min-width: map-get($grid-breakpoints, lg)) {
+      max-width: 436px;
       font-size: 26px;
     }
   }
@@ -141,12 +144,15 @@
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 16px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
+    @include media-breakpoint-up(md) {
+      padding: 48px;
+    }
   }
   &__how-was {
     display: flex;
@@ -177,11 +183,13 @@
   }
 
   &__name {
-    max-width: 320px;
     margin-bottom: 32px;
     color: inherit;
     line-height: 1;
     text-align: center;
+    span {
+      display: block;
+    }
   }
   &__button {
     min-width: 240px;

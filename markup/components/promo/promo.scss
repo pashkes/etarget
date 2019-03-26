@@ -1,4 +1,6 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   padding-top: 24px;
   padding-bottom: 24px;
   background: #12171E url(__static__general/bg_dark.jpg) center no-repeat;
@@ -9,12 +11,17 @@
     padding-top: 50px;
     padding-bottom: 42px;
   }
-
   &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up(xl) {
+      min-height: 552px;
+    }
   }
 
   &__cost {
@@ -71,13 +78,9 @@
   }
   &__button {
     width: 100%;
-    margin-bottom: 42px;
     @include media-breakpoint-up(sm) {
       min-width: 240px;
       width: auto;
-    }
-    @include media-breakpoint-up(xl) {
-      margin-bottom: 85px;
     }
   }
   &__about-company {

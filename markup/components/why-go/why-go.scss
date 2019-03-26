@@ -9,9 +9,14 @@
     padding-bottom: 66px;
   }
   &__header {
-
     @include media-breakpoint-up(lg) {
       margin-bottom: 60px;
+    }
+  }
+  &__title {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
     }
   }
   &__desc {
@@ -29,6 +34,8 @@
     }
   }
   &__text {
-    max-width: 340px;
+    @include media-breakpoint-up(lg) {
+      max-width: 340px;
+    }
   }
 }

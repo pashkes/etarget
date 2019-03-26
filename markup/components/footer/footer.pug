@@ -4,8 +4,8 @@ mixin footer(data)
   footer.footer
     .container
       .footer__main
-        .row.align-items-lg-start.justify-content-center.justify-content-sm-between.justify-content-lg-start.align-items-lg-center
-          .col-auto.col-md-8.col-lg.col-xl-6
+        .row.align-items-lg-start.justify-content-center.justify-content-md-between.justify-content-lg-start.align-items-lg-center
+          .col-auto.col-lg.col-xl-6
             .footer__about-company
               a(href="#" target="_blank").footer__logo-promouter
                 img(src="__static__img/general/logo-ahmanov.png" alt="Лооготип Ашманов и Партнеры»")
@@ -15,7 +15,7 @@ mixin footer(data)
                 Нам доверили продвижение своих сайтов более 1100&nbsp;клиентов.
                 <a href="#" target="_blank">Реклама на&nbsp;YouTube</a>
 
-          .col-auto.ml-xl-auto
+          .col-md-auto.ml-xl-auto
             .footer__social
               +social(social)
           .col-12.col-sm-auto.ml-md-auto.mr-md-auto.mr-xl-0.ml-xl-0

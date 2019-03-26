@@ -1,10 +1,8 @@
 .header {
-  margin-bottom: 52px;
-  @include media-breakpoint-up(xl) {
-    margin-bottom: 102px;
-  }
   &__logo {
-    padding-top: 9px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 9px;
+    }
     img {
       width: 184px;
       height: 40px;
@@ -15,6 +13,10 @@
       .dropdown-toggle {
         border-bottom: none;
         border-radius: 20px 20px 0 0;
+        background-color: #141821;
+        @include media-breakpoint-up(xl) {
+          background-color: transparent;
+        }
         &::before {
           transform: rotate(-180deg);
         }
@@ -50,16 +52,32 @@
     min-width: 100%;
     padding-top: 0;
     margin-top: 0;
-    background-color: transparent;
+    background-color: #141821;
     border: 1px solid white;
     border-top: none;
     border-radius: 0 0 20px 20px;
     color: white;
+    max-height: 252px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      @include media-breakpoint-up(xl) {
+        width: 6px;
+        background-color: #f1f1f1;
+      }
+    }
+    &::-webkit-scrollbar-thumb {
+      @include media-breakpoint-up(xl) {
+        background-color: #C1C1C1;
+        outline: 1px solid slategrey;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      background-color: transparent;
+    }
   }
   .dropdown-item {
     color: white;
-    padding-left: 32px;
-    padding-right: 8px;
+    padding: 0.45em 8px 0.45em 32px;
     font-size: 14px;
     &:hover,
     &:focus {
