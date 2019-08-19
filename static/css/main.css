@@ -8372,6 +8372,58 @@ img {
   border-radius: 50%;
 }
 
+.social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #ffffff;
+}
+
+.social__link:hover {
+  border-color: #326cff;
+  background-color: #326cff;
+}
+
+.social__link:focus {
+  border-color: #1456ff;
+  background-color: #1456ff;
+}
+
+.social__link .icon {
+  fill: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8523,58 +8575,6 @@ img {
   .promo__socials {
     padding-top: 24px;
   }
-}
-
-.social {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  list-style-type: none;
-}
-
-.social__item {
-  margin-right: 16px;
-  overflow: hidden;
-}
-
-.social__item:last-child {
-  margin-right: 0;
-}
-
-.social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border: 1px solid #ffffff;
-}
-
-.social__link:hover {
-  border-color: #326cff;
-  background-color: #326cff;
-}
-
-.social__link:focus {
-  border-color: #1456ff;
-  background-color: #1456ff;
-}
-
-.social__link .icon {
-  fill: white;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .stock {
