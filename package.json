@@ -29,7 +29,7 @@
     "download": "4.4.3",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "gulp": "3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
